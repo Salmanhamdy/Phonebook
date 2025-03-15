@@ -47,11 +47,7 @@ namespace Phonebook.Controllers
             await _contactRepository.SavaChangesAsync();
             return Ok("Contact deleted successfully");
         }
-<<<<<<< HEAD
-     
-=======
-        [Authorize(Roles = "Admin")]
->>>>>>> b7af67122b3dc0270cf1d90d40e98b2ee45b4afc
+
         [HttpGet("Search")]
         public async Task<ActionResult<IReadOnlyList<Contact>>> GetContactSearch([FromQuery]string SearchValue) 
         {
